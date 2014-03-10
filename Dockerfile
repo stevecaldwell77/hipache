@@ -21,6 +21,4 @@ add	./supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 add	./config/config_dev.json /usr/local/lib/node_modules/hipache/config/config_dev.json
 add	./config/config_test.json /usr/local/lib/node_modules/hipache/config/config_test.json
 add	./config/config.json /usr/local/lib/node_modules/hipache/config/config.json
-expose	80
-expose	6379
 cmd	["supervisord", "-n"]
